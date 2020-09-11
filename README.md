@@ -1,6 +1,6 @@
 ## Inv_Conv_Glow in PyTorch
 
-![CIFAR-10 Samples](/samples/epoch_80.png?raw=true "CIFAR-10 Samples")
+![CIFAR-10 Samples](/samples/epoch80.png?raw=true "CIFAR-10 Samples")
 
 Implementation of Inv_conv_Glow in PyTorch. Based on the paper:
 
@@ -17,10 +17,10 @@ CIFAR-10 experiments described in Table 4 of the paper.
 ### Environment Setup
   1. Make sure you have [Anaconda or Miniconda](https://conda.io/docs/download.html)
   installed.
-  2. Clone repo with `git clone https://github.com/chrischute/glow.git glow`.
-  3. Go into the cloned repo: `cd glow`.
-  4. Create the environment: `conda env create -f environment.yml`.
-  5. Activate the environment: `source activate glow`.
+  2. Clone repo with `git clone https://github.com/Naagar/Normalizing_flow_pyTorch`.
+  3. Go into the cloned repo: `cd Normalizing_flow_pyTorch`.
+  4. Create the environment: `conda env create norm_glow`.
+  5. Activate the environment: `source activate norm_glow`.
 
 ### Train
   1. Make sure you've created and activated the conda environment as described above.
@@ -39,44 +39,6 @@ A single epoch takes about 30 minutes with the default hyperparameters (K=32, L=
 ## Samples (K=16, L=3, C=512)
 
 ### Epoch 10
-
-![Samples at Epoch 10](/samples/epoch_10.png?raw=true "Samples at Epoch 10")
-
-
-### Epoch 20
-
-![Samples at Epoch 20](/samples/epoch_20.png?raw=true "Samples at Epoch 20")
-
-
-### Epoch 30
-
-![Samples at Epoch 30](/samples/epoch_30.png?raw=true "Samples at Epoch 30")
-
-
-### Epoch 40
-
-![Samples at Epoch 40](/samples/epoch_40.png?raw=true "Samples at Epoch 40")
-
-
-### Epoch 50
-
-![Samples at Epoch 50](/samples/epoch_50.png?raw=true "Samples at Epoch 50")
-
-
-### Epoch 60
-
-![Samples at Epoch 60](/samples/epoch_60.png?raw=true "Samples at Epoch 60")
-
-
-### Epoch 70
-
-![Samples at Epoch 70](/samples/epoch_70.png?raw=true "Samples at Epoch 70")
-
-
-### Epoch 80
-
-![Samples at Epoch 80](/samples/epoch_80.png?raw=true "Samples at Epoch 80")
-
 
 More samples can be found in the `samples` folder.
 
