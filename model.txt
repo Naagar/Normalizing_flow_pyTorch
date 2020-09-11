@@ -1,0 +1,364 @@
+Glow(
+  (flows): _Glow(
+    (steps): ModuleList(
+      (0): _FlowStep(
+        (norm): ActNorm()
+        (conv): InvConv()
+        (coup): Coupling_1(
+          (nn): NN(
+            (in_norm): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (in_conv): Conv2d(3, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (out_conv): Conv2d(512, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (1): _FlowStep(
+        (norm): ActNorm()
+        (conv): InvConv()
+        (coup): Coupling_1(
+          (nn): NN(
+            (in_norm): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (in_conv): Conv2d(3, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (out_conv): Conv2d(512, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (2): _FlowStep(
+        (norm): ActNorm()
+        (conv): InvConv()
+        (coup): Coupling_1(
+          (nn): NN(
+            (in_norm): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (in_conv): Conv2d(3, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (out_conv): Conv2d(512, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (3): _FlowStep(
+        (norm): ActNorm()
+        (conv): InvConv()
+        (coup): Coupling_1(
+          (nn): NN(
+            (in_norm): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (in_conv): Conv2d(3, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (out_conv): Conv2d(512, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+    )
+    (next): _Glow(
+      (steps): ModuleList(
+        (0): _FlowStep(
+          (norm): ActNorm()
+          (conv): InvConv()
+          (coup): Coupling_1(
+            (nn): NN(
+              (in_norm): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (in_conv): Conv2d(6, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (out_conv): Conv2d(512, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (1): _FlowStep(
+          (norm): ActNorm()
+          (conv): InvConv()
+          (coup): Coupling_1(
+            (nn): NN(
+              (in_norm): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (in_conv): Conv2d(6, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (out_conv): Conv2d(512, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (2): _FlowStep(
+          (norm): ActNorm()
+          (conv): InvConv()
+          (coup): Coupling_1(
+            (nn): NN(
+              (in_norm): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (in_conv): Conv2d(6, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (out_conv): Conv2d(512, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (3): _FlowStep(
+          (norm): ActNorm()
+          (conv): InvConv()
+          (coup): Coupling_1(
+            (nn): NN(
+              (in_norm): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (in_conv): Conv2d(6, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (out_conv): Conv2d(512, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+      )
+      (next): _Glow(
+        (steps): ModuleList(
+          (0): _FlowStep(
+            (norm): ActNorm()
+            (conv): InvConv()
+            (coup): Coupling_1(
+              (nn): NN(
+                (in_norm): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (in_conv): Conv2d(12, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+                (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+                (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (out_conv): Conv2d(512, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              )
+            )
+          )
+          (1): _FlowStep(
+            (norm): ActNorm()
+            (conv): InvConv()
+            (coup): Coupling_1(
+              (nn): NN(
+                (in_norm): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (in_conv): Conv2d(12, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+                (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+                (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (out_conv): Conv2d(512, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              )
+            )
+          )
+          (2): _FlowStep(
+            (norm): ActNorm()
+            (conv): InvConv()
+            (coup): Coupling_1(
+              (nn): NN(
+                (in_norm): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (in_conv): Conv2d(12, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+                (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+                (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (out_conv): Conv2d(512, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              )
+            )
+          )
+          (3): _FlowStep(
+            (norm): ActNorm()
+            (conv): InvConv()
+            (coup): Coupling_1(
+              (nn): NN(
+                (in_norm): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (in_conv): Conv2d(12, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+                (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+                (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (out_conv): Conv2d(512, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
+Glow(
+  (flows): _Glow(
+    (steps): ModuleList(
+      (0): _FlowStep(
+        (norm): ActNorm()
+        (conv): InvConv()
+        (coup): Coupling_1(
+          (nn): NN(
+            (in_norm): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (in_conv): Conv2d(3, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (out_conv): Conv2d(512, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (1): _FlowStep(
+        (norm): ActNorm()
+        (conv): InvConv()
+        (coup): Coupling_1(
+          (nn): NN(
+            (in_norm): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (in_conv): Conv2d(3, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (out_conv): Conv2d(512, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (2): _FlowStep(
+        (norm): ActNorm()
+        (conv): InvConv()
+        (coup): Coupling_1(
+          (nn): NN(
+            (in_norm): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (in_conv): Conv2d(3, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (out_conv): Conv2d(512, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+      (3): _FlowStep(
+        (norm): ActNorm()
+        (conv): InvConv()
+        (coup): Coupling_1(
+          (nn): NN(
+            (in_norm): BatchNorm2d(3, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (in_conv): Conv2d(3, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+            (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+            (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+            (out_conv): Conv2d(512, 6, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+          )
+        )
+      )
+    )
+    (next): _Glow(
+      (steps): ModuleList(
+        (0): _FlowStep(
+          (norm): ActNorm()
+          (conv): InvConv()
+          (coup): Coupling_1(
+            (nn): NN(
+              (in_norm): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (in_conv): Conv2d(6, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (out_conv): Conv2d(512, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (1): _FlowStep(
+          (norm): ActNorm()
+          (conv): InvConv()
+          (coup): Coupling_1(
+            (nn): NN(
+              (in_norm): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (in_conv): Conv2d(6, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (out_conv): Conv2d(512, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (2): _FlowStep(
+          (norm): ActNorm()
+          (conv): InvConv()
+          (coup): Coupling_1(
+            (nn): NN(
+              (in_norm): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (in_conv): Conv2d(6, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (out_conv): Conv2d(512, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+        (3): _FlowStep(
+          (norm): ActNorm()
+          (conv): InvConv()
+          (coup): Coupling_1(
+            (nn): NN(
+              (in_norm): BatchNorm2d(6, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (in_conv): Conv2d(6, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+              (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+              (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+              (out_conv): Conv2d(512, 12, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+            )
+          )
+        )
+      )
+      (next): _Glow(
+        (steps): ModuleList(
+          (0): _FlowStep(
+            (norm): ActNorm()
+            (conv): InvConv()
+            (coup): Coupling_1(
+              (nn): NN(
+                (in_norm): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (in_conv): Conv2d(12, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+                (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+                (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (out_conv): Conv2d(512, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              )
+            )
+          )
+          (1): _FlowStep(
+            (norm): ActNorm()
+            (conv): InvConv()
+            (coup): Coupling_1(
+              (nn): NN(
+                (in_norm): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (in_conv): Conv2d(12, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+                (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+                (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (out_conv): Conv2d(512, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              )
+            )
+          )
+          (2): _FlowStep(
+            (norm): ActNorm()
+            (conv): InvConv()
+            (coup): Coupling_1(
+              (nn): NN(
+                (in_norm): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (in_conv): Conv2d(12, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+                (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+                (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (out_conv): Conv2d(512, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              )
+            )
+          )
+          (3): _FlowStep(
+            (norm): ActNorm()
+            (conv): InvConv()
+            (coup): Coupling_1(
+              (nn): NN(
+                (in_norm): BatchNorm2d(12, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (in_conv): Conv2d(12, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1), bias=False)
+                (mid_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (mid_conv): Conv2d(512, 512, kernel_size=(1, 1), stride=(1, 1), bias=False)
+                (out_norm): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+                (out_conv): Conv2d(512, 24, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+              )
+            )
+          )
+        )
+      )
+    )
+  )
+)
