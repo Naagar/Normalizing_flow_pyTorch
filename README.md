@@ -2,7 +2,7 @@
 
 
 
-Implementation of Inv_conv_Glow in PyTorch. Based on the paper:
+Implementation CInC Flow: Characterizable Invertible 3x3 Convolution:
 
   > Private
   > 
