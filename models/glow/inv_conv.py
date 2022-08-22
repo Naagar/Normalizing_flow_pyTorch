@@ -34,7 +34,7 @@ class InvConv(nn.Module):
         z = F.conv2d(x, weight)
 
         return z, sldj
-class InvConv_3_3(nn.Module):
+class InvConv_3x3(nn.Module):
     """Invertible 1x1 Convolution for 2D inputs. Originally described in Glow
     (https://arxiv.org/abs/1807.03039). Does not support LU-decomposed version.
 
