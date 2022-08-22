@@ -55,7 +55,7 @@ def get_conv_weight_np(filter_shape, stable_init=True, unit_testing=False):
     return weight_np
 
 class InvConv_3x3(nn.Module):
-    """Invertible 3x3 Convolution for 2D inputs fro CInC Flow. Originally described in Glow
+    """Invertible 3x3 Convolution for 2D inputs for CInC Flow. Originally described in Glow
     (https://arxiv.org/abs/1807.03039). Does not support LU-decomposed version.
 
     Args:
